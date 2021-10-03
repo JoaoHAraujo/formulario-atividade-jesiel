@@ -1,0 +1,48 @@
+body {
+    background-color: rgba(109, 109, 211, 0.384);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#email, #senha, .botoes > input {
+    text-transform: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.endereco-usuario {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 300px;
+}
+
+.botoes > input {
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(17, 112, 201, 0.829);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}

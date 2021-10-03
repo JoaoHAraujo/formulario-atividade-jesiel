@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "nome": "user teste a",
+      "email": "testeA@mail.com",
+      "senha": "aSDasd123466",
+      "data-nasc": "2001-01-01",
+      "sexo": "feminino",
+      "cep": "12345678",
+      "logradouro": "Rua teco teco",
+      "numero": "189",
+      "bairro": "teste",
+      "cidade": "picos",
+      "estado": "pi",
+      "id": 1
+    }
+  ]
+}

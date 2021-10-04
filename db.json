@@ -1,17 +1,17 @@
 {
   "user": [
     {
-      "nome": "user teste a",
-      "email": "testeA@mail.com",
-      "senha": "aSDasd123466",
-      "data-nasc": "2001-01-01",
-      "sexo": "feminino",
+      "nome": "JOÃO HENRIQUE ARAÚJO DOS SANTOS",
+      "email": "teste@email.com",
+      "senha": "123456",
+      "data-nasc": "1994-11-06",
+      "sexo": "SEXO EXEMPLO",
       "cep": "12345678",
-      "logradouro": "Rua teco teco",
-      "numero": "189",
-      "bairro": "teste",
-      "cidade": "picos",
-      "estado": "pi",
+      "logradouro": "RUA TECO TECO",
+      "numero": "123",
+      "bairro": "TESTE",
+      "cidade": "PICOS",
+      "estado": "PI",
       "id": 1
     }
   ]

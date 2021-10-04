@@ -1,11 +1,41 @@
-const optSexoOutro = document.querySelector('#optSexoOutro')
+const txtSexoOutros = document.querySelector('#txtSexoOutros')
+const optSexo = document.querySelectorAll('input[name="sexo"]')
+const optSexoOutros = document.querySelector('#optSexoOutros')
+const btnEnviar = document.querySelector('input[type="submit"]')
 
-optSexoOutro.addEventListener('change', () => {
-    const txtSexoOutro = document.querySelector('#txtSexoOutro')
-    if (optSexoOutro.checked == true) {
-        txtSexoOutro.disabled = false
-    } else {
-        txtSexoOutro.disabled = true
-    }
-    
-})
+
+function paraMaiusculo(){
+    const inputMaiusculo = document.querySelectorAll('.maiusculo')
+    inputMaiusculo.forEach((input) => {
+        input.addEventListener('change', () => {
+            input.value = input.value.toUpperCase()
+        })  
+    })
+}
+
+
+function habilitaSexoOutros() {
+    optSexo.forEach((opt) => {
+        opt.addEventListener('change', () => {
+            if (optSexoOutros.checked) {
+                txtSexoOutros.disabled = false
+            } else {
+                txtSexoOutros.disabled = true
+                txtSexoOutros.value = ''
+            }
+        })
+    })
+}
+
+function enviarForm() {
+    btnEnviar.addEventListener('click', () => {
+        if (optSexoOutros.checked) {
+            optSexoOutros.value = txtSexoOutros.value
+            txtSexoOutros.disabled = true
+        }
+    })
+}
+
+paraMaiusculo()
+habilitaSexoOutros()
+enviarForm()

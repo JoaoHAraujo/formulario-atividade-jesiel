@@ -10,27 +10,28 @@
 </head>
 <body>
     <h1>Formulário de Usuário</h1>
-    <form action="http://localhost:3000/user" method="post"> <!-- Coloquei este endereço pois estava treinando salvar os itens em um arquivo json a partir do próprio HTML usando o form-->
+    <form action="http://localhost:3000/user" target="_blank" method="post"> <!-- Coloquei este endereço pois estava treinando salvar os itens em um arquivo json a partir do próprio HTML usando o form-->
             <h2>Informações de Usuário</h2>
 
         <div class="info-usuario">    
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" required> <br>
+            <input type="text" name="nome" required class="maiusculo"> <br>
 
             <label for="email">Email:</label>
             <input type="email" name="email" placeholder="seuEmail@mail.com" id="email" required> <br>
 
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" minlength="6" required> <br>
+            <input type="password" name="senha" id="senha" minlength="6" placeholder="no mínimo 6 caracteres" required> <br>
 
             <label for="data-nasc">Data de Nascimento:</label>
             <input type="date" name="data-nasc" required> <br>
 
             <label for="sexo">Sexo:</label>
-            <input type="radio" name="sexo" value="masculino" checked> Masculino
-            <input type="radio" name="sexo" value="feminino"> Feminino
-            <input type="radio" name="sexo" value="outro" id="optSexoOutro"> Outros:
-            <textarea name="sexo" id="txtSexoOutro" cols="20" rows="1" maxlength="15" disabled required></textarea>
+            <input type="radio" name="sexo" id="optSexoMasc" value="MASCULINO" checked> Masculino
+            <input type="radio" name="sexo" id="optSexoFem" value="FEMININO"> Feminino
+            <input type="radio" name="sexo" value="" id="optSexoOutros" class="maiusculo"> Outros:
+
+            <input type="text" name="sexoOutros" id="txtSexoOutros" class="maiusculo" maxlength="20" disabled required>
         </div>
 
         <h2>Endereço</h2>
@@ -40,19 +41,19 @@
             <input type="number" min="01001000" max="99999999" name="cep" required> <br>
             
             <label for="logradouro">Logradouro:</label>
-            <input type="text" name="logradouro" required> <br>
+            <input type="text" name="logradouro" required class="maiusculo"> <br>
 
             <label for="numero">Número:</label>
             <input type="number" name="numero" min="1" max="99999999" required> <br>
 
             <label for="bairro">Bairro:</label>
-            <input type="text" name="bairro" required> <br>
+            <input type="text" name="bairro" required class="maiusculo"> <br>
 
             <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" required> <br>
+            <input type="text" name="cidade" required class="maiusculo"> <br>
 
             <label for="estado">Estado (UF):</label>
-            <input type="text" name="estado" maxlength="2" placeholder="Insira a sigla do estado: SP, RJ, MG..." required> <br> 
+            <input type="text" name="estado" maxlength="2" placeholder="Insira a sigla do estado: SP, RJ, MG..." required class="maiusculo"> <br> 
         </div>
 
         <div class="botoes">

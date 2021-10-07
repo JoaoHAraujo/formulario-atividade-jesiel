@@ -2,17 +2,31 @@
   "user": [
     {
       "nome": "JOÃO HENRIQUE ARAÚJO DOS SANTOS",
-      "email": "teste@email.com",
+      "email": "mail@mail.com",
       "senha": "123456",
       "data-nasc": "1994-11-06",
-      "sexo": "SEXO EXEMPLO",
-      "cep": "12345678",
-      "logradouro": "RUA TECO TECO",
-      "numero": "123",
-      "bairro": "TESTE",
+      "sexo": "SEXO TESTE",
+      "cep": "64601294",
+      "logradouro": "Rua São João",
+      "numero": "111",
+      "bairro": "São José",
+      "cidade": "Picos",
+      "estado": "PI",
+      "id": 2
+    },
+    {
+      "nome": "CBGHDFGHSFHSF",
+      "email": "crislanea118@gmail.com",
+      "senha": "213456789",
+      "data-nasc": "2011-11-11",
+      "sexo": "DFHSFWRTUHR",
+      "cep": "64601294",
+      "logradouro": "RUA SÃO JOÃO",
+      "numero": "111",
+      "bairro": "SÃO JOSÉ",
       "cidade": "PICOS",
       "estado": "PI",
-      "id": 1
+      "id": 5
     }
   ]
 }

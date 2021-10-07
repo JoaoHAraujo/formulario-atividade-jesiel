@@ -32,18 +32,22 @@ inputCEP.addEventListener('change', () => {
 })
 
 async function preencheEndereco(cep) { // Busca na API as informações de endereço a partir do CEP e preenche form
-    let res = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
-    let endereco = await res.json()
+    try {
+        let res = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        let endereco = await res.json()
+        const logradouro = document.querySelector('#logradouro')
+        const bairro = document.querySelector('#bairro')
+        const cidade = document.querySelector('#cidade')
+        const uf = document.querySelector('#uf')
 
-    const logradouro = document.querySelector('#logradouro')
-    const bairro = document.querySelector('#bairro')
-    const cidade = document.querySelector('#cidade')
-    const uf = document.querySelector('#uf')
+        logradouro.value = endereco.logradouro
+        bairro.value = endereco.bairro
+        cidade.value = endereco.localidade
+        uf.value = endereco.uf 
 
-    logradouro.value = endereco.logradouro
-    bairro.value = endereco.bairro
-    cidade.value = endereco.localidade
-    uf.value = endereco.uf  
+    } catch(e){
+        console.error(e.message)
+    }
 }
 
 

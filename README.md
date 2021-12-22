@@ -5,3 +5,5 @@ Esse projeto tem objetivo avaliativo na disciplina Programação para Internet d
 
 O objetivo dessa avaliação é a criação de um formulário dinâmico e funcional que alimente as informações a partir do consumo da API
 de CEP's ViaCEP, disponível em: https://viacep.com.br e inserir as informações de formulário em um arquivo .json
+
+Todo esse objetivo foi desenvolvido com o uso de HTML, CSS e JavaScript puros.
